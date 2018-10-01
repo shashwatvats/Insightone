@@ -1,0 +1,112 @@
+
+.main {
+
+    &__isp-image::before {
+        background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/influence.jpg);
+    }
+     &__internship-image::before {
+        background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/internship.jpg);
+    }
+
+     &__event-image::before {
+        background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/events.jpg);
+    }
+      &__about-image::before {
+        background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/about.jpg);
+    }
+
+
+}
+
+.heading-1 {
+    font-size: 3.5rem;
+    color: #002073;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: "futur", sans-serif;
+    white-space: nowrap;
+    margin-bottom: 3rem;
+        position: relative;
+    @include respond(1000){
+          font-size: 3rem;
+         list-style-position: 2px;
+         margin-bottom: 2rem;
+        }
+      @include respond(800){
+          font-size: 2rem;
+         list-style-position: 2px;
+         margin-bottom: 2rem;
+          letter-spacing: 1px;
+        }
+     @include respond(phone){
+          font-size: 1.2rem;
+         list-style-position: 2px;
+         margin-bottom: 2rem;
+          letter-spacing: 1px;
+         font-family: "futurmedium",sans-serif;
+        }
+    
+    &::after{
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: 100%; 
+        top: 100%;
+        transform: translateY(-50%);
+        background: #002073;
+        
+        left: 0;
+    }
+}
+.heading-size-1{
+ font-size: 4rem !important; 
+    text-transform: uppercase;
+    margin-bottom: 6rem !important;
+    @include respond(767){
+    font-size: 2.5rem !important; 
+        margin-bottom: 4rem !important;
+    }
+    @include respond(phone){
+    font-size: 2rem !important; 
+        margin-bottom: 3rem !important;
+    }
+}
+.heading-size-2{
+ font-size: 2rem !important; 
+    text-transform: uppercase;
+    margin-bottom: 4rem !important;
+     @include respond(767){
+    font-size: 1.5rem !important; 
+        margin-bottom: 3rem !important;
+    }
+      @include respond(phone){
+    font-size: 1.3rem !important; 
+        margin-bottom: 2rem !important;
+    }
+       @include respond(500){
+    font-size: 1rem !important; 
+        margin-bottom: 1.5rem !important;
+    }
+}
+.php__heading{
+         color: #fff;
+        font-family: "brooklynBold",sans-serif;
+        font-weight: 600;
+        font-size: 9rem;
+        z-index: 0;
+        animation-name: moveDown;
+        animation-duration: 2s;
+        white-space: nowrap;
+        letter-spacing: 4px;
+   
+        @include respond(800) {
+            font-size:5rem;
+            letter-spacing: 3px;
+
+        }
+
+        @include respond(phone) {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+}
